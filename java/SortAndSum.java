@@ -1,14 +1,10 @@
 package com.stackroute;
-/*Write a program which accepts a number as input from user and perform the following:
-a. sort the number in non-increasing order
-b. after sorting sum all the even numbers, the sum should be greater than 15 .
-c. if sum is more than 15,then print output as true or false.*/
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class SortAndSum
 {
-    public static String reverseStr(String str)
+    String reverseStr(String str)
     {
         int i;
         char tempArray[] = str.toCharArray();
@@ -16,7 +12,7 @@ public class SortAndSum
         String rev = "";
         for(i=tempArray.length-1; i>=0; i--)
         {
-            rev = rev + (tempArray[i]);
+            /*Your code here*/
         }
         System.out.println("Sorted number in non-increasing order : " + rev);
         return rev;
@@ -31,7 +27,7 @@ public class SortAndSum
         {
             if(Character.getNumericValue(tempArray[i])%2 == 0)
             {
-                sum = sum + Character.getNumericValue(tempArray[i]);
+                /*Your code here*/
             }
         }
         System.out.println("Sum of even numbers : " + sum);
@@ -41,28 +37,23 @@ public class SortAndSum
     {
         if(sum > 15)
         {
-            System.out.println("True");
-            return true;
+        /*Your code here*/
         }
         else
         {
-            System.out.println("False");
-            return false;
+            /*Your code here*/
         }
     }
-    public static void main(String args[])
+   boolean  checkIt(String str)
     {
         int sum = 0;
-        Scanner sc = new Scanner(System.in);
-        String str = sc.next();
+
         if(str.matches("[0-9]+"))
         {
-            reverseStr(str);
-            sum = CalculateSum(str);
-            checkSum(sum);
+           /*Your code here*/
         }
         else{
-            System.out.println("Invalid input");
+            return false;
         }
     }
 }
